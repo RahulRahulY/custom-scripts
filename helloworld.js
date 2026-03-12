@@ -10,6 +10,14 @@ UI.onEvent(function (eventType, data) {
 });
 
 var html =
+  "<style>\n" +
+  "    #customButton:hover {\n" +
+  "        background-color: darkblue !important;\n" +
+  "    }\n" +
+  "    #customButton:active {\n" +
+  "        background-color: navy !important;\n" +
+  "    }\n" +
+  "</style>\n" +
   "<div style='box-sizing:border-box;width:100%;height:100%;border:1px solid rgb(235, 235, 235);background-color: white;border-radius:2px;box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);'>\n" +
   "    <div style='padding-right:10px;left:0px;top:0px;width:100%;height:37px;'>\n" +
   "            Custom UI\n" +
