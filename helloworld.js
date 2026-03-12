@@ -13,10 +13,15 @@ var html =
 
 UI.setHtml(html);
 
-UI.onEvent(function(type, data) {
-  if(type === 'uiAction' && data.id === 'customButton' && data.type === 'click') {
+UI.onEvent(function (type, data) {
+  UI.log("event type: " + type);
+
+  if (
+    type === "uiAction" &&
+    data.id === "customButton" &&
+    data.type === "click"
+  ) {
     UI.alert("clicked");
-    UI.log('clicked');
+    UI.log("clicked");
   }
 });
-
