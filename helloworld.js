@@ -13,14 +13,15 @@ var html =
 
 var config = {};
 
+UI.getUiConfiguration().then(function(uiConfig) {
+  config = uiConfig;
+});
+
 UI.setHtml(html);
 
-setTimeout(function() {
-  var button = document.getElementById('customButton');
-  if(button) {
-    button.addEventListener('click', function() {
-      console.log(config);
-      console.log('clicked');
-    });
+UI.onEvent(function(type, data) {
+  if(type === 'uiAction' && data.id === 'customButton' && data.type === 'click') {
+    UI.log(data);
+    UI.log('clicked');
   }
-}, 0);
+});
