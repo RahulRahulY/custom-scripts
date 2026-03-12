@@ -1,3 +1,8 @@
+UI.onEvent(function (eventType, data) {
+  UI.log("Event type: " + eventType);
+  UI.log("Event data: " + JSON.stringify(data));
+});
+
 var html =
   "<div style='box-sizing:border-box;width:100%;height:100%;border:1px solid rgb(235, 235, 235);background-color: white;border-radius:2px;box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);'>\n" +
   "    <div style='padding-right:10px;left:0px;top:0px;width:100%;height:37px;'>\n" +
@@ -10,8 +15,3 @@ var html =
   "</div>";
 
 UI.setHtml(html);
-
-UI.onEvent(function (eventType, data) {
-  UI.log("Event type: " + eventType);
-  UI.log("Event data: " + JSON.stringify(data));
-});
