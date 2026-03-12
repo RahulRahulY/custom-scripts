@@ -13,11 +13,7 @@ var html =
 
 UI.setHtml(html);
 
-UI.getUiConfiguration(function (json) {
-  UI.getEntityUri(function (uri) {
-    UI.onEvent(function (eventType, data) {
-      UI.log("Event type: " + eventType);
-      UI.log("Event data: " + JSON.stringify(data));
-    });
-  });
+UI.onEvent(function (eventType, data) {
+  UI.log("Event type: " + eventType);
+  UI.log("Event data: " + JSON.stringify(data));
 });
