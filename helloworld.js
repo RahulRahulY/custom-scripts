@@ -15,10 +15,12 @@ var config = {};
 
 UI.setHtml(html);
 
-let button = document.getElementById("customButton");
-if (button) {
-  button.addEventListener("click", function () {
-    console.log(config);
-    console.log("clicked");
-  });
-}
+setTimeout(function() {
+  var button = document.getElementById('customButton');
+  if(button) {
+    button.addEventListener('click', function() {
+      console.log(config);
+      console.log('clicked');
+    });
+  }
+}, 0);
