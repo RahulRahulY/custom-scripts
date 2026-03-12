@@ -13,15 +13,11 @@ var html =
 
 UI.setHtml(html);
 
-UI.onEvent(function (type, data) {
-  UI.log("event type: " + type);
-
-  if (
-    type === "uiAction" &&
-    data.id === "customButton" &&
-    data.type === "click"
-  ) {
-    UI.alert("clicked");
-    UI.log("clicked");
-  }
+UI.getUiConfiguration(function (json) {
+  UI.getEntityUri(function (uri) {
+    UI.onEvent(function (eventType, data) {
+      UI.log("Event type: " + eventType);
+      UI.log("Event data: " + JSON.stringify(data));
+    });
+  });
 });
