@@ -9,5 +9,7 @@ UI.onEvent(function (eventType, data) {
     
   if(eventType === 'uiAction' && data.id === 'customButton' && data.type === 'click') {
     UI.openSearch({});
+
+    UI.log('Button clicked!');
   }
 });
