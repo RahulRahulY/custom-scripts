@@ -1,17 +1,13 @@
-UI.onEvent(function (eventType, data) {
-  UI.log("Event type: " + eventType);
-  UI.log("Event data: " + JSON.stringify(data));
-
-  //   if (eventType === "uiAction") {
-  //     if (data && data.id === "customButton") {
-  //       UI.alert("Custom button clicked!");
-  //     }
-  //   }
-});
-
-var html =
-  "<div>" +
-  "  <button id='customButton' data-action='click'>Click Me</button>" +
+var html = "<div style='padding: 20px;'>" +
+  "<button id='customButton' style='padding: 10px 20px; background-color: blue; color: white; border: none; border-radius: 4px; cursor: pointer;'>Button</button>" +
   "</div>";
 
 UI.setHtml(html);
+
+UI.onEvent(function (eventType, data) {
+    UI.log('Event Type: ' + eventType);
+    
+  if(eventType === 'uiAction' && data.id === 'customButton' && data.type === 'click') {
+    UI.openSearch({});
+  }
+});
