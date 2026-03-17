@@ -11,6 +11,39 @@ var html =
 
 UI.setHtml(html);
 
+// Get all entity and context related details
+UI.getEntity().then(function (entity) {
+  UI.log("Entity: " + JSON.stringify(entity));
+});
+
+UI.getEntityUri().then(function (entityUri) {
+  UI.log("Entity URI: " + entityUri);
+});
+
+UI.getApiPath().then(function (apiPath) {
+  UI.log("API Path: " + apiPath);
+});
+
+UI.getTenant().then(function (tenant) {
+  UI.log("Tenant: " + tenant);
+});
+
+UI.getPerspective().then(function (perspective) {
+  UI.log("Perspective: " + perspective);
+});
+
+UI.getConfiguration().then(function (config) {
+  UI.log("Configuration: " + JSON.stringify(config));
+});
+
+UI.getUiConfiguration().then(function (uiConfig) {
+  UI.log("UI Configuration: " + JSON.stringify(uiConfig));
+});
+
+UI.getSearchQuery().then(function (query) {
+  UI.log("Search Query: " + query);
+});
+
 UI.onEvent(function (eventType, data) {
   UI.log("Event Type: " + eventType);
 
@@ -21,8 +54,5 @@ UI.onEvent(function (eventType, data) {
   ) {
     UI.log("Button clicked!");
 
-    UI.getEntity().then(function (entity) {
-      UI.log("Current Entity: ", entity);
-    });
   }
 });
