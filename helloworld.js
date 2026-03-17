@@ -1,5 +1,5 @@
 var html =
-  "<div style='border-box;-webkit-user-select:none;cursor:default;width:100%;height:100%;border:1px solid rgb(235, 235, 235);background-color: white;border-radius:2px;box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);'>\n" +
+  "<div style='background-color: white;border-box;-webkit-user-select:none;cursor:default;width:100%;height:100%;border:1px solid rgb(235, 235, 235);background-color: white;border-radius:2px;box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);'>\n" +
   "    <div style='text-overflow: ellipsis; touch-action: none; z-index: 10; box-sizing: border-box; position: absolute; -webkit-user-select: text; font-family: Arial, sans-serif; font-size: 13px; line-height: 1.4; color: rgb(51, 51, 51); font-weight: bold; left: 10px; top: 10px; width: 100%; height: 18px;'>\n" +
   "            Static Page\n" +
   "        </div>\n" +
