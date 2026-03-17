@@ -1,15 +1,28 @@
-var html = "<div style='padding: 20px;'>" +
-  "<button id='customButton' ui-actions='click' style='padding: 10px 20px; background-color: blue; color: white; border: none; border-radius: 4px; cursor: pointer;'>Button</button>" +
+var html =
+  "<div style='overflow-x:hidden;overflow-y:hidden;box-sizing:border-box;position:absolute;-webkit-user-select:none;cursor:default;width:100%;height:100%;border:1px solid rgb(235, 235, 235);background-color: white;border-radius:2px;box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);'>\n" +
+  "    <div style='overflow-x:hidden;overflow-y:hidden;z-index:10;box-sizing:border-box;position:relative;-webkit-user-select:none;cursor:default;padding-right:10px;left:0px;top:0px;width:100%;height:37px;'>\n" +
+  "        <div style='overflow: hidden; white-space: nowrap; text-overflow: ellipsis; touch-action: none; z-index: 10; box-sizing: border-box; position: absolute; -webkit-user-select: text; font-family: Arial, sans-serif; font-size: 13px; line-height: 1.4; color: rgb(51, 51, 51); font-weight: bold; left: 10px; top: 10px; width: 100%; height: 18px;'>\n" +
+  "            {0}\n" +
+  "        </div>\n" +
+  "    </div>\n" +
+  "    <div style='overflow-x:hidden;overflow-y:hidden;box-sizing:border-box;position:relative;-webkit-user-select:none;cursor:default;padding:10px;left:0px;top:0px;width:100%;height:100%;'>\n" +
+  "       <button id='customButton' style='padding: 10px 20px; background-color: blue; color: white; border: none; border-radius: 4px; cursor: pointer;'>Click Me</button>\n" +
+  "       <iframe src='{1}' frameborder='0' style='border-width: 0; width: 100%; height: 100%;'> </iframe>\n" +
+  "    </div>\n" +
   "</div>";
 
 UI.setHtml(html);
 
 UI.onEvent(function (eventType, data) {
-    UI.log('Event Type: ' + eventType);
-    
-  if(eventType === 'uiAction' && data.id === 'customButton' && data.type === 'click') {
+  UI.log("Event Type: " + eventType);
+
+  if (
+    eventType === "uiAction" &&
+    data.id === "customButton" &&
+    data.type === "click"
+  ) {
     UI.openSearch({});
 
-    UI.log('Button clicked!');
+    UI.log("Button clicked!");
   }
 });
