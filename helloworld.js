@@ -19,8 +19,6 @@ UI.onEvent(function (eventType, data) {
     data.id === "customButton" &&
     data.type === "click"
   ) {
-    UI.openSearch({});
-
     UI.log("Button clicked!");
 
     UI.getEntity().then(function (entity) {
