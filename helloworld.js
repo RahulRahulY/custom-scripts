@@ -12,6 +12,8 @@ var html =
   "</div>";
 
 UI.setHtml(html);
+UI.setHeight(165);
+UI.setwidth(327);
 
 UI.onEvent(function (eventType, data) {
   UI.log("Event Type: " + eventType);
