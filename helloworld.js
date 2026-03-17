@@ -1,9 +1,9 @@
 var html =
-  "<div style='background-color: white;border-box;-webkit-user-select:none;cursor:default;width:100%;height:100%;border:1px solid rgb(235, 235, 235);background-color: white;border-radius:2px;box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);'>\n" +
-  "    <div style='text-overflow: ellipsis; touch-action: none; z-index: 10; box-sizing: border-box; position: absolute; -webkit-user-select: text; font-family: Arial, sans-serif; font-size: 13px; line-height: 1.4; color: rgb(51, 51, 51); font-weight: bold; left: 10px; top: 10px; width: 100%; height: 18px;'>\n" +
+  "<div style='width:100%;height:100%;border:1px solid rgb(235, 235, 235);background-color: white;border-radius:2px; dislay:flex;flex-direction:column;'>\n" +
+  "    <div style='font-family: Arial, sans-serif; font-size: 13px; color: rgb(51, 51, 51); font-weight: bold; width: 100%; height: 18px;'>\n" +
   "            Static Page\n" +
   "        </div>\n" +
-  "    <div style='webkit-user-select:none;cursor:default;padding:10px;left:0px;top:0px;width:100%;height:100%;'>\n" +
+  "    <div style='flex:1, padding: 0px 10px 10px;overflow:auto'>\n" +
   "        <p>Welcome to the Static Page</p>\n" +
   "        <button style='padding: 10px 20px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 14px;'>Click Me</button>\n" +
   "    </div>\n" +
