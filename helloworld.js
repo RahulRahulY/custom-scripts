@@ -1,17 +1,15 @@
 var html =
-  "<div style='width:100%;height:100%;border:1px solid rgb(235, 235, 235);background-color: white;border-radius:2px; dislay:flex;flex-direction:column;'>\n" +
+  "<div style='width:100%;height:100%;border:1px solid rgb(235, 235, 235);background-color: white;border-radius:2px; display:flex;flex-direction:column;'>\n" +
   "    <div style='font-family: Arial, sans-serif; font-size: 13px; color: rgb(51, 51, 51); font-weight: bold; width: 100%; height: 18px;'>\n" +
   "            Static Page\n" +
   "        </div>\n" +
-  "    <div style='flex:1, padding: 0px 10px 10px;overflow:auto'>\n" +
+  "    <div style='flex:1;padding: 0px 10px 10px;overflow:auto'>\n" +
   "        <p>Welcome to the Static Page</p>\n" +
-  "        <button style='padding: 10px 20px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 14px;'>Click Me</button>\n" +
+  "        <button id='customButton' style='padding: 10px 20px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 14px;'>Click Me</button>\n" +
   "    </div>\n" +
   "</div>";
 
 UI.setHtml(html);
-UI.setHeight(165);
-UI.setwidth(327);
 
 UI.onEvent(function (eventType, data) {
   UI.log("Event Type: " + eventType);
