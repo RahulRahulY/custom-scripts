@@ -5,7 +5,7 @@ var html =
   "        </div>\n" +
   "    <div style='flex:1;padding: 0px 10px 10px;overflow:auto'>\n" +
   "        <p>EM Actions</p>\n" +
-  "        <button id='customButton' style='padding: 10px 20px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 14px;'>Click Me</button>\n" +
+  "        <button id='customButton' ui-actions='click' style='padding: 10px 20px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 14px;'>Click Me</button>\n" +
   "    </div>\n" +
   "</div>";
 
