@@ -2,6 +2,7 @@ var html =
   "<div style='border:1px solid rgb(235, 235, 235);background-color: white;border-radius:2px;'>\n" +
   "    <div style='padding: 0px 10px 10px;overflow:auto'>\n" +
   "        <p>EM</p>\n" +
+  "        <span class='reltio-spinner' style='padding: 8px'>Loading</span>\n" +
   "        <button id='customButton' ui-actions='click' style='padding: 10px 20px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 14px;'>Click Me</button>\n" +
   "    </div>\n" +
   "</div>";
@@ -49,6 +50,5 @@ UI.onEvent(function (eventType, data) {
     data.type === "click"
   ) {
     UI.log("Button clicked!");
-
   }
 });
