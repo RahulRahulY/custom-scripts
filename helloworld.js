@@ -60,10 +60,4 @@ Promise.all([
       .replace("{0}", entity.label)
       .replace("{1}", entity.crosswalks?.length),
   );
-  
-  UI.setHtml(
-    html
-      .replace("{0}", "reltio-btb-button-disabled")
-      .replace("{1}", config.label),
-  );
 });
