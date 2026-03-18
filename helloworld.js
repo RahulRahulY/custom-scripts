@@ -15,9 +15,7 @@ let html =
 
 UI.setHtml(html);
 
-UI.getEntity().then(function (entity) {
-  UI.log("Entity: " + JSON.stringify(entity));
-  
+UI.getEntity().then(function (entity) {  
   let label = entity.label || "-";
   let crosswalksCount = entity.crosswalks.length || 0;
   
