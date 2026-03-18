@@ -1,11 +1,11 @@
 let html =
   "<div style='border:1px solid rgb(235, 235, 235);background-color: white;border-radius:2px; display:flex;flex-direction:column'>\n" +
   "    <div style='padding: 0px 10px 10px;overflow:auto'>\n" +
-  "        <p style='font-size: 18px; font-weight: bold; margin: 10px 0;'>EM Integration</p>\n" +
+  "        <p style='font-size: 18px; font-weight: 400; margin: 10px 0;'>EM Integration</p>\n" +
 
   "        <div style='margin: 10px 0;'>\n" +
-  "            <p style='font-size: 14px; color: #666;'>Enity Name: <span id='entityName' style='color: #333; font-weight: bold;'>-</span></p>\n" +
-  "            <p style='font-size: 14px; color: #666;'>Crosswalks Count: <span id='crosswalkCount' style='color: #333; font-weight: bold;'>-</span></p>\n" +
+  "            <p style='font-size: 14px; color: #666;'>Enity Name: <span id='entityName' style='color: #333;'>-</span></p>\n" +
+  "            <p style='font-size: 14px; color: #666;'>Crosswalks Count: <span id='crosswalkCount' style='color: #333;'>-</span></p>\n" +
   "        </div>\n" +
   "    </div>\n" +
   "    <div style='padding: 10px;'>\n" +
