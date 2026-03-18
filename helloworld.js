@@ -39,14 +39,6 @@ UI.getPerspective().then(function (perspective) {
   UI.log("Perspective: " + perspective);
 });
 
-UI.getConfiguration().then(function (config) {
-  UI.log("Configuration: " + JSON.stringify(config));
-});
-
-UI.getUiConfiguration().then(function (uiConfig) {
-  UI.log("UI Configuration: " + JSON.stringify(uiConfig));
-});
-
 UI.getSearchQuery().then(function (query) {
   UI.log("Search Query: " + query);
 });
