@@ -1,5 +1,5 @@
 let html =
-  "<div style='background-color: white;display:flex;flex-direction:column'>\n" +
+  "<div style='background-color: white;display:flex;flex-direction:column;box-shadow:0 4px 6px rgba(0,0,0,0.1)'>\n" +
   "    <div style='padding: 0px 10px 10px;overflow:auto'>\n" +
   "        <p style='font-size: 18px; font-weight: 400; margin: 10px 0;'>EM Integration</p>\n" +
   "        <div style='margin: 10px 0;'>\n" +
