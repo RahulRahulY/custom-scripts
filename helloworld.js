@@ -1,7 +1,7 @@
 let html =
-  "<div style='border:1px solid rgb(235, 235, 235);background-color: white;border-radius:2px;'>\n" +
+  "<div style='width:100%;height:100%;border:1px solid rgb(235, 235, 235);background-color: white;border-radius:2px; display:flex;flex-direction:colum'>\n" +
   "    <div style='padding: 0px 10px 10px;overflow:auto'>\n" +
-  "        <h2>EM Integration</h2>\n" +
+  "        <p>EM Integration</p>\n" +
 
   "        <div style='margin: 10px 0;'>\n" +
   "            <p>Enity Name: <span id='entityName'>-</span></p>\n" +
