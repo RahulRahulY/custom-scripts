@@ -57,8 +57,8 @@ Promise.all([
   
   UI.setHtml(
     html
-      .replace("{0}", "reltio-btb-button-normal")
-      .replace("{1}", config.label),
+      .replace("{0}", entity.label)
+      .replace("{1}", entity.crosswalks?.length),
   );
   
   UI.setHtml(
