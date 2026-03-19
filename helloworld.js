@@ -35,7 +35,9 @@ UI.onEvent(function (eventType, data) {
       "https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&current_weather=true",
       "GET",
     ).then(function (response) {
-      UI.log("API Response: ", response);
+      UI.log("API Response: ", JSON.stringify(response));
+    }).catch(function (error) {
+      UI.log("API Error: ", error);
     });
   }
 });
