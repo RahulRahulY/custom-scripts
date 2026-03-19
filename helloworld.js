@@ -36,10 +36,10 @@ UI.onEvent(function (eventType, data) {
 UI.api(
   "https://gist.githubusercontent.com/RahulRahulY/beb746f99877538f6e67cb1a37e01f32/raw/74417098ca5d8e593f6cae538b5259e093a0220c/test.json",
   "GET",
-  null,
-  {},
-  null,
-  function (response) {
-    UI.log("API Response: ", JSON.stringify(response));
-  },
-);
+)
+  .then(function (response) {
+    UI.log("API Response: ", JSON.stringify(response), response.json());
+  })
+  .catch(function (error) {
+    UI.log("API Error: ", error);
+  });
