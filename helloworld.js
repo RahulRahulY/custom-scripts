@@ -3,8 +3,8 @@ let html =
   "    <div style='padding: 0px 10px 10px;overflow:auto'>\n" +
   "        <p style='font-size: 18px; font-weight: 400; margin: 10px 0;'>EM Integration</p>\n" +
   "        <div style='margin: 10px 0;'>\n" +
-  "            <p style='font-size: 14px; color: #666;'>Entity Id: <span id='crosswalkCount' style='color: #333;'>{1}</span></p>\n" +
-  "            <p style='font-size: 14px; color: #666;'>Enity Name: <span id='entityName' style='color: #333;'>{0}</span></p>\n" +
+  "            <p style='font-size: 14px; color: #666;'>Entity Id: <span id='crosswalkCount' style='color: #333;'></span></p>\n" +
+  "            <p style='font-size: 14px; color: #666;'>Enity Name: <span id='entityName' style='color: #333;'></span></p>\n" +
   "        </div>\n" +
   "    </div>\n" +
   "    <div style='padding: 10px; display: flex; justify-content: flex-end;'>\n" +
