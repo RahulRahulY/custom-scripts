@@ -14,17 +14,6 @@ let html =
 
 UI.setHtml(html);
 
-UI.api(
-  "https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&current_weather=true",
-  "GET",
-)
-  .then(function (response) {
-    UI.log("API Response: ", JSON.stringify(response), response.json());
-  })
-  .catch(function (error) {
-    UI.log("API Error: ", error);
-  });
-
 UI.onEvent(function (eventType, data) {
   UI.log("Event Type: " + eventType);
 
@@ -54,16 +43,7 @@ Promise.all([
     tenant = values[1];
   config = values[2];
 
-  UI.api(
-    "https://mockly.me/user/basic",
-    "GET",
-    null,
-    {
-      tenantId: tenant,
-      environmentUrl: apiPath + "/api/",
-    },
-    null,
-  )
+  UI.api("https://mockly.me/user/basic", "GET")
     .then(function (response) {
       UI.log("API Response: ", JSON.stringify(response), response.json());
     })
