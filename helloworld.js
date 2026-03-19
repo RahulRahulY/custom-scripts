@@ -1,6 +1,7 @@
 let html =
-  "<div style='background-color: white;display:flex;flex-direction:column;width:100%;height:100%;box-sizing:border-box;margin:0;pading:0;overflow:hidden;box-shadow: inset 0 0 1px 2px rgba(0, 0, 0, 0.02)'>\n" +
-  "    <div style='padding: 0px 10px 10px;overflow:auto;flex:1 1 auto;box-sizing:border-box'>\n" +
+  "<div style='background-color: white;display:flex;flex-direction:column;width:100%;height:100%;box-sizing:border-box;border-radius:4px;margin:0;overflow:hidden;box-shadow: inset 0 0 1px 2px rgba(0, 0, 0, 0.05)'>\n" +
+  
+  "    <div style='padding: 8px 0px 12px 14px;overflow:auto;flex:1 1 auto;box-sizing:border-box'>\n" +
   "        <p style='font-size: 18px; font-weight: 400; margin: 10px 0;'>EM Integration</p>\n" +
   "        <div style='margin: 10px 0;'>\n" +
   "            <p style='font-size: 14px; color: #666;'>Entity Id: <span id='crosswalkCount' style='color: #333;'></span></p>\n" +
