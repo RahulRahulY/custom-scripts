@@ -36,15 +36,15 @@ UI.onEvent(function (eventType, data) {
 let uiConfig;
 UI.getUiConfiguration().then(function (config) {
   uiConfig = config;
-  UI.log("UI Configuration: " + config);
-});
-
-UI.api(uiConfig.url, "GET")
+  UI.log("UI Configuration: " + JSON.stringify(uiConfig));
+  
+  UI.api("https://reltio-ui-localization.s3.amazonaws.com/en-us.json", "GET")
   .then(function (response) {
-    UI.log("API Response: " + JSON.stringify(response));
-
-    UI.log("response: " + response);
-  })
-  .catch(function (error) {
-    UI.log("API Error: " + error);
-  });
+      UI.log("API Response: " + JSON.stringify(response));
+      
+      UI.log("response: " + response);
+    })
+    .catch(function (error) {
+        UI.log("API Error: " + error);
+    });
+});
