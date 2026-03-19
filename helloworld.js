@@ -55,7 +55,7 @@ Promise.all([
   config = values[2];
 
   UI.api(
-    config.url,
+    "https://mockly.me/user/basic",
     "GET",
     null,
     {
