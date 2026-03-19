@@ -8,7 +8,7 @@ let html =
   "        </div>\n" +
   "    </div>\n" +
   "    <div style='padding: 10px; display: flex; justify-content: flex-end;'>\n" +
-  "        <button id='customButton' ui-actions='click' style='padding: 10px 20px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 14px;'>Button</button>\n" +
+  "        <button id='customButton' ui-actions='click' style='padding: 10px 20px; background-color:#337ab7; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 14px;'>Button</button>\n" +
   "    </div>\n" +
   "</div>";
 
