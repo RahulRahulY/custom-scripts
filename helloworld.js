@@ -39,7 +39,7 @@ UI.getUiConfiguration().then(function (config) {
   UI.log("UI Configuration: " + config.url);
 });
 
-UI.api("https://reltio-ui-localization.s3.amazonaws.com/en-us.json", "GET")
+UI.api("https://raw.githubusercontent.com/RahulRahulY/custom-scripts/main/test.json", "GET")
   .then(function (response) {
     UI.log("API Response: " + JSON.stringify(response));
 
