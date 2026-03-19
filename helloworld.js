@@ -12,6 +12,8 @@ let html =
   "    </div>\n" +
   "</div>";
 
+UI.setHtml(html);
+
 UI.getEntityUri().then(function (entityUri) {
   UI.log("Entity URI: " + entityUri);
 });
