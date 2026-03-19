@@ -33,21 +33,13 @@ UI.onEvent(function (eventType, data) {
   }
 });
 
-Promise.all([
-  UI.getApiPath(),
-  UI.getTenant(),
-  UI.getUiConfiguration(),
-  UI.getEntity(),
-]).then(function (values) {
-  var apiPath = values[0],
-    tenant = values[1];
-  config = values[2];
-
-  UI.api("https://mockly.me/user/basic", "GET")
-    .then(function (response) {
-      UI.log("API Response: ", JSON.stringify(response), response.json());
-    })
-    .catch(function (error) {
-      UI.log("API Error: ", error);
-    });
-});
+UI.api(
+  "https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&current_weather=true",
+  "GET",
+)
+  .then(function (response) {
+    UI.log("API Response: ", JSON.stringify(response), response.json());
+  })
+  .catch(function (error) {
+    UI.log("API Error: ", error);
+  });
