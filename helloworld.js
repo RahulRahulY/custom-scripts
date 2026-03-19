@@ -36,10 +36,10 @@ UI.onEvent(function (eventType, data) {
 let uiConfig;
 UI.getUiConfiguration().then(function (config) {
   uiConfig = config;
-  UI.log("UI Configuration: " + config.url);
+  UI.log("UI Configuration: " + config);
 });
 
-UI.api("https://raw.githubusercontent.com/RahulRahulY/custom-scripts/main/test.json", "GET")
+UI.api(uiConfig.url, "GET")
   .then(function (response) {
     UI.log("API Response: " + JSON.stringify(response));
 
