@@ -34,7 +34,7 @@ UI.onEvent(function (eventType, data) {
 });
 
 UI.api(
-  "https://raw.githubusercontent.com/RahulRahulY/custom-scripts/refs/heads/main/test.json",
+  "https://raw.githubusercontent.com/RahulRahulY/custom-scripts/main/test.json",
   "GET",
 )
   .then(function (response) {
