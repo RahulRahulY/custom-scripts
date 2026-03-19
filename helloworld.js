@@ -33,8 +33,14 @@ UI.onEvent(function (eventType, data) {
   }
 });
 
+let uiConfig;
+UI.getUiConfiguration().then(function (config) {
+  uiConfig = config;
+  UI.log("UI Configuration: ", config.url);
+});
+
 UI.api(
-  "https://raw.githubusercontent.com/RahulRahulY/custom-scripts/main/test.json",
+  "https://reltio-ui-localization.s3.amazonaws.com/en-us.json",
   "GET",
 )
   .then(function (response) {
