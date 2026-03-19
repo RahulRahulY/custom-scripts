@@ -34,7 +34,7 @@ UI.onEvent(function (eventType, data) {
 });
 
 UI.api(
-  "https://gist.github.com/RahulRahulY/beb746f99877538f6e67cb1a37e01f32",
+  "https://gist.githubusercontent.com/RahulRahulY/beb746f99877538f6e67cb1a37e01f32/raw/74417098ca5d8e593f6cae538b5259e093a0220c/test.json",
   "GET",
 )
   .then(function (response) {
