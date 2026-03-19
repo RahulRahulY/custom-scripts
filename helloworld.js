@@ -40,6 +40,6 @@ UI.api(
   {},
   null,
   function (response) {
-    UI.log("API Response: ", JSON.stringify(response), response.json());
+    UI.log("API Response: ", JSON.stringify(response));
   },
 );
