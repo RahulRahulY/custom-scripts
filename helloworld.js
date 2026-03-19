@@ -12,8 +12,6 @@ let html =
   "    </div>\n" +
   "</div>";
 
-UI.setHtml(html);
-
 UI.getEntityUri().then(function (entityUri) {
   UI.log("Entity URI: " + entityUri);
 });
@@ -46,11 +44,9 @@ UI.onEvent(function (eventType, data) {
 
     UI.getEntity().then(function (entity) {
       let [, entityId] = entity.uri.split("/");
-      UI.setHtml(
-        html
-          .replace("{0}", entity.label)
-          .replace("{1}", entityId)
-      );
+
+      UI.setChildHtml("entityName", entity.label);
+      UI.setChildHtml("crosswalkCount", entityId);
     });
   }
 });
