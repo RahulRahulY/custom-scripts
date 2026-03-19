@@ -19,7 +19,7 @@ UI.api(
   "GET",
 )
   .then(function (response) {
-    UI.log("API Response: ", JSON.stringify(response));
+    UI.log("API Response: ", JSON.stringify(response), response.json());
   })
   .catch(function (error) {
     UI.log("API Error: ", error);
