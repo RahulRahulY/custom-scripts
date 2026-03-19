@@ -51,11 +51,8 @@ Promise.all([
   UI.getEntity(),
 ]).then(function (values) {
   var apiPath = values[0],
-    tenant = values[1],
-    config = values[2],
-    entity = values[3],
-    lastEntityUri = null,
-    enabled = isEnabledForEntity(entity, config);
+    tenant = values[1];
+  config = values[2];
 
   UI.api(
     config.url,
