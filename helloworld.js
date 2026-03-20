@@ -1,16 +1,17 @@
-let html =
-  "<div style='background-color: white;display:flex;flex-direction:column;width:100%;height:100%;box-sizing:border-box;border-radius:4px;margin:0;overflow:hidden;box-shadow: inset 0 0 1px 2px rgba(0, 0, 0, 0.05)'>\n" +
-  "    <div style='padding: 8px 0px 12px 14px;overflow:auto;flex:1 1 auto;box-sizing:border-box'>\n" +
-  "        <p style='font-size: 18px; font-weight: 400; margin: 10px 0;'>Entity Details</p>\n" +
-  "        <div style='margin: 10px 0;'>\n" +
-  "            <p style='font-size: 14px; color: #666;'>Entity Id: <span id='entityId' style='color: #333;'></span></p>\n" +
-  "            <p style='font-size: 14px; color: #666;'>Entity Name: <span id='entityName' style='color: #333;'></span></p>\n" +
-  "        </div>\n" +
-  "    </div>\n" +
-  "    <div style='padding: 10px; display: flex; justify-content: flex-end;'>\n" +
-  "        <button id='customButton' ui-actions='click' style='padding: 10px 20px; background-color:#337ab7; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 14px;'>Button</button>\n" +
-  "    </div>\n" +
-  "</div>";
+let html = `
+  <div style='background-color: white;display:flex;flex-direction:column;width:100%;height:100%;box-sizing:border-box;border-radius:4px;margin:0;overflow:hidden;box-shadow: inset 0 0 1px 2px rgba(0, 0, 0, 0.05)'>
+    <div style='padding: 8px 0px 12px 14px;overflow:auto;flex:1 1 auto;box-sizing:border-box'>
+      <p style='font-size: 18px; font-weight: 400; margin: 10px 0;'>Entity Details</p>
+      <div style='margin: 10px 0;'>
+        <p style='font-size: 14px; color: #666;'>Entity Id: <span id='entityId' style='color: #333;'></span></p>
+        <p style='font-size: 14px; color: #666;'>Entity Name: <span id='entityName' style='color: #333;'></span></p>
+      </div>
+    </div>
+    <div style='padding: 10px; display: flex; justify-content: flex-end;'>
+      <button id='customButton' ui-actions='click' style='padding: 10px 20px; background-color:#337ab7; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 14px;'>Button</button>
+    </div>
+  </div>
+`;
 
 UI.setHtml(html);
 
@@ -37,14 +38,14 @@ let uiConfig;
 UI.getUiConfiguration().then(function (config) {
   uiConfig = config;
   UI.log("UI Configuration: " + JSON.stringify(uiConfig));
-  
+
   UI.api("https://reltio-ui-localization.s3.amazonaws.com/en-us.json", "GET")
-  .then(function (response) {
+    .then(function (response) {
       UI.log("API Response: " + JSON.stringify(response));
-      
+
       UI.log("response: " + response);
     })
     .catch(function (error) {
-        UI.log("API Error: " + error);
+      UI.log("API Error: " + error);
     });
 });
