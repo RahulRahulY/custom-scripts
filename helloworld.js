@@ -35,9 +35,9 @@ UI.onEvent(function (eventType, data) {
 });
 
 let uiConfig;
-UI.getUiConfiguration().then(function (config) {
+UI.getUser().then(function (config) {
   uiConfig = config;
-  UI.log("UI Configuration: " + JSON.stringify(uiConfig));
+  UI.log("UI User: " + JSON.stringify(uiConfig));
 
   UI.api("https://reltio-ui-localization.s3.amazonaws.com/en-us.json", "GET")
     .then(function (response) {
